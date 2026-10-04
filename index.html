@@ -22,6 +22,11 @@
 <!-- 検索エンジンにインデックスを許可 -->
 <meta name="robots" content="index, follow">
 
+<!-- favicon（タブ・検索結果のアイコン） -->
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<meta property="og:image" content="https://comeoke-ncu.github.io/comeoke2025/logo.png">
+
 <!-- 構造化データ（Googleに詳細情報を伝える） -->
 <script type="application/ld+json">
 {
@@ -62,10 +67,10 @@ html{scroll-behavior:smooth;}
 body{font-family:'Noto Serif JP','Lato',serif;background:var(--warm-white);color:var(--text);font-weight:300;line-height:1.9;}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(250,248,244,0.0);backdrop-filter:blur(12px);transition:background var(--transition),box-shadow var(--transition),padding var(--transition);}
-nav.scrolled{background:rgba(250,248,244,0.96);box-shadow:0 1px 24px rgba(92,69,48,0.07);padding-top:0.6rem;padding-bottom:0.6rem;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0.8rem 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(250,248,244,0.0);backdrop-filter:blur(12px);transition:background var(--transition),box-shadow var(--transition);}
+nav.scrolled{background:rgba(250,248,244,0.96);box-shadow:0 1px 24px rgba(92,69,48,0.07);}
 .nav-logo-wrap{display:flex;align-items:center;gap:0.7rem;text-decoration:none;}
-.nav-logo-img{width:30px;height:30px;object-fit:contain;transition:opacity 0.3s;}
+.nav-logo-img{width:30px;height:30px;object-fit:contain;transition:opacity 0.3s;flex-shrink:0;}
 .nav-logo-wrap:hover .nav-logo-img{opacity:0.75;}
 .nav-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;letter-spacing:0.14em;color:var(--brown-dark);}
 .nav-links{display:flex;gap:2.4rem;list-style:none;}
